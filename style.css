@@ -1,0 +1,43 @@
+.all-list {
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		width: 100%;
+		margin: 0 -.6666rem;
+	}
+
+	.list-item {
+		height: 300px;
+		width: 30%;
+		margin: 15px;
+	}
+	
+	.votes {
+		width: 100%;
+	}
+	
+	.minus, .plus, .minus-num, .plus-num {
+		display: inline-block;
+	}
+	.minus, .plus {
+		width: 7%;
+	}
+	
+	.minus-num, .plus-num {
+		width: 20%;
+	}
+	.minus, .minus-num {
+		color: red;
+	}
+	
+	.plus, .plus-num {
+		color: green;
+	}
+	
+	.minus, .plus-num {
+		text-align: right;
+	}
+	
+	.description {
+		height: 200px;
+	}
