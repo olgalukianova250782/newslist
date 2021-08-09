@@ -5,7 +5,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 
 $this->setFrameMode(true);
 ?>
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/css/style.css">
 
 <?
 if($_POST["OK_PLUS"]) {
@@ -37,9 +37,6 @@ if($_POST["OK_MINUS"]) {
 		$res = CIBlockElement::GetList(Array(), $arFilter, false, Array("nPageSize"=>50), $arSelect);
 		
 		$count_printed = 0;
-
-$mmm = $res->GetNextElement()->GetFields();
-//var_dump ($mmm);
 
 while($ob = $res->GetNextElement()){ 
 	$fields = $ob->GetFields();
@@ -93,4 +90,4 @@ while($ob = $res->GetNextElement()){
 </div>
 <input id="show_more" type="button" value="Показать еще" >
     
- <script src="/script.js"></script>
+ <script src="/js/script.js"></script>
